@@ -1,0 +1,7 @@
+Prefix pipelines/BaySeq/
+Plugin HTCountData inputfile parameters.txt outputfile CD.rds
+Plugin PlotNA inputfile CD.rds outputfile na.pdf
+Plugin Prior inputfile CD.rds outputfile PRIOR.rds
+Plugin Likelihood inputfile PRIOR.rds outputfile LIKELIHOOD.rds
+Plugin TopCounts inputfile LIKELIHOOD.rds outputfile topcounts.csv
+Plugin PlotPosterior inputfile LIKELIHOOD.rds outputfile posterior.pdf
